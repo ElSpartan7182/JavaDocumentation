@@ -1,0 +1,11 @@
+site_name: Documentación
+site_description: Mi documentación de java
+site_author: Yo
+
+theme: readthedocs
+nav:
+  - Inicio: index.md
+  - Introduccion a la Programacion:
+    - Introducción: IntroduccionProgramacion/Introduccion.md
+  - Empezando con Java:
+    - El Inicio: FundamentosJava/Empezando.md
