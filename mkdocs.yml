@@ -9,3 +9,4 @@ nav:
     - Introducción: IntroduccionProgramacion/Introduccion.md
   - Empezando con Java:
     - El Inicio: FundamentosJava/Empezando.md
+    - Variables: FundamentosJava/Variables.md
