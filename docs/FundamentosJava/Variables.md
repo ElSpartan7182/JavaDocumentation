@@ -1,4 +1,4 @@
-# Variables en Java
+# Variables en Java y tipos de datos
 
 ## ¿Qué son las variables?
 
@@ -44,6 +44,10 @@ El método para establecer una variable es el siguiente:
 Un ejemplo claro es el siguiente: `int numero = 1` donde `int` es el tipo de dato, `numero` es el nombre de la variable y `1`es el valor de esta.
 
 Hasta ahora, ya conoces los tipos de datos primitivos, por lo que puedes jugar con ellos y establecer variables.
+
+## Recomendaciones
+
+Una recomendación para que puedan mantener el orden y la comprensión de su código, es nombrar las variables con su tipo de dato, y/o con el dato que almacenan.
 
 ### ¿Qué se puede hacer con las variables?
 
@@ -126,3 +130,50 @@ Si ahora, queremos saber cuál es la posición de algún caracter o la posición
 String texto = "Este es un texto de prueba";
 System.out.println(texto.indexOf("texto")); // El output es 11
 ```
+
+#### Suma de un String
+
+Los String, también tienen la peculiaridad de que se pueden sumar, ¿de qué manera?, pues... Supongamos que tienes un texto que dice `Hola` y le sumas `Mundo`, el resultado de eso, sería `HolaMundo`. Esta propiedad de los String se conoce como **concatenación**
+
+**Ejemplo en main():**
+```java
+String nombre = "Carlos";
+String apellido = "Flores";
+
+System.out.println(nombre + " " + apellido); //Esto imprime Carlos Flores
+```
+
+#### Numeros en los Strings
+
+Los números, también pueden encontrarse dentro de los Strings, por ejemplo, puedes sumar números y Strings.
+Eso sí, hay que considerar que se suman como strings, por lo que sumar `1` y `2` en forma de String, resultaría como **12**.
+
+- **Ejemplo en main():**
+```java
+int num = 3;
+String num1 = "1";
+String num2 = "2";
+
+System.out.println(num + num1); //Esto imprime 31
+System.out.println(num1 + num2); //Esto imprime 12
+```
+
+#### Casos especiales
+
+¿Qué pasaría si quisieran poner comillas en un String? Es decir, `"Hola, el termino "Hola" es el principio de este enunciado"`
+Básicamente te daría un error. ¿Cómo evitarlo? Ponle un `\` antes de las comillas.
+
+En la siguiente tabla explicaré los siguiente:
+
+|Carácter que da error| Forma de evitarlo |
+| - | - |
+|" "| \" |
+|' '| \' |
+| \ | \\\ |
+
+Aquí dejo otras secuencias útiles para los textos de los Strings:
+
+| Forma útil | Lo que hace |
+| ---------- | ----------- |
+| \n | Es un **enter**|
+| \t | Espacio de **tabulador**|
