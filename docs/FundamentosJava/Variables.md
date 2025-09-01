@@ -16,7 +16,7 @@ Ya hablamos que las variables pueden almacenar tipos de datos, pero existen unos
 - `int`: almacena números enteros.
 - `double`: almacena números enteros y decimales.
 - `boolean`: almacena **true** y **false**.
-- `char`: almacena un caracter en **Unicode**.
+- `char`: almacena un caracter en **Unicode** o valores **ASCII**.
 - `byte`: almacena números enteros.
 - `short`: almacena números enteros.
 - `long`: almacena números enteros.
@@ -41,6 +41,20 @@ Aquí te dejo una tabla con algunas cosas importantes que debes considerar de es
 El método para establecer una variable es el siguiente:
 `tipoDeDato` `nombreDeVariable` = `valorDeVariable`
 
+Ahora, para ponerle nombre a tus variables hay que saber lo siguiente:
+
+1. El nombre de la variable puede contener letras, números, guiones bajos y signos de dinero.
+
+2. Las variables **deben** empezar en una letra.
+
+3. La letra con la que empieza debe estar en minúscula y no puede contener algún espacio.
+
+4. Esto contradice el 2, pero las varibles pueden empezar con **$** o **_**.
+
+5. Las mayúsculas y minúsculas afectan a las variables, es decir, `miVariable` y `mivariable` no es lo mismo.
+
+6. Palabras como los tipos de datos no pueden usarse como nombre, e.j: `int int = 1` no es posible.
+
 Un ejemplo claro es el siguiente: `int numero = 1` donde `int` es el tipo de dato, `numero` es el nombre de la variable y `1`es el valor de esta.
 
 Hasta ahora, ya conoces los tipos de datos primitivos, por lo que puedes jugar con ellos y establecer variables.
@@ -51,14 +65,14 @@ Una recomendación para que puedan mantener el orden y la comprensión de su có
 
 ### ¿Qué se puede hacer con las variables?
 
-1. **Imprimir el valor de la variable:** Si declaras una variable y la colocas dentro de un `print()`, se va a imprimir el valor de esta.
+- **Imprimir el valor de la variable:** Si declaras una variable y la colocas dentro de un `print()`, se va a imprimir el valor de esta.
 **Ejemplo en main():**
 ```java
 int x = 1;
 System.out.print(x); // En la consola verás 1
 ```
 
-2. **Reestablecer el valor de la variable:** Puedes modificar el valor interno de la variable, siempre y cuando no tenga un `final`.
+- **Reestablecer el valor de la variable:** Puedes modificar el valor interno de la variable, siempre y cuando no tenga un `final`.
 **Ejemplo en main():**
 ```java
 int x = 1;
@@ -67,14 +81,16 @@ x = 2;
 System.out.print(x); // En la consola verás 2
 ```
 
-3. **Poner un valor fijo:** Ya hablamos del `final`, este sirve para fijar un valor en una variable, en el caso de que lo quieras reestablecer, te dará un error.
+- **Poner un valor fijo:** Ya hablamos del `final`, este sirve para fijar un valor en una variable, en el caso de que lo quieras reestablecer, te dará un error.
+
+El `final` es como si dijeramos valor **final** de la variable. Se utiliza para dar valores que simplemente no cambian, por ejemplo: una hora son 60 minutos.
 **Ejemplo en main():**
 ```java
 final int x = 1;
 x = 2; // Esto genera un error
 ```
 
-4. **Operaciones:** Puedes usar operadores aritméticos para los tipos de variables que guardan algún número.
+- **Operaciones:** Puedes usar operadores aritméticos para los tipos de variables que guardan algún número.
 **Ejemplo en main():**
 ```java
 int x = 1+2; // Esto es una suma dentro de una variable
@@ -86,6 +102,10 @@ int suma = y+z; // Esta es una suma de variables
 ```
 
 ## Otros tipos de datos
+
+Existen tipos de datos que **NO** son primitivos, por ejemplo los **Strings, Arrays, Clases, etc**
+
+En este momento sólamente hablaremos un poco de los Strings.
 
 ### Strings
 
