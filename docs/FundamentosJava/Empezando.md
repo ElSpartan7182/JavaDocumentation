@@ -137,6 +137,8 @@ System.out.print(5 + 5);
 ```
 El output se vería: `10`
 
+Por último, existe el `printf()` que significa **print format**. Por el momento no hablaremos tanto, ya que requiere de cierto conocimiento un poquito avanzado, pero más adelante veremos de que trata.
+
 ## Comentarios en Java
 
 Los comentarios sirven para dar alguna explicación, por ejemplo, si alguien externo ve tu código, leyendo los comentarios va a poder darse una idea más rápido que andar leyendo línea por línea el funcionamiento.

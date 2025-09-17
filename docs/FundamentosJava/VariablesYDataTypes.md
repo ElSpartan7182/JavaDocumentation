@@ -197,3 +197,17 @@ Aquí dejo otras secuencias útiles para los textos de los Strings:
 | ---------- | ----------- |
 | \n | Es un **enter**|
 | \t | Espacio de **tabulador**|
+
+## Var
+
+La palabra `var` sirve para crear literalmente **variables**, pero, este tiene la particularidad de que no requiere especificarse algún tipo de dato, ya que este identifica directamente el tipo de dato.
+
+Pongamos un ejemplo:
+- Cuando escribes `var x = 1`, la palabra `var` va a significar `int`, por lo que si luego ponemos `x = 1.2` vamos a ocasionar un error de compilación.
+
+Esto se puede hacer con **cualquier** tipo de dato, **primitivo o no primitivo**.
+
+### ¿Cuándo se utiliza?
+
+Puede parecer que se utiliza poco, pero realmente sirve para simplificar líneas de código que son tediosas de escribir.
+Por ejemplo: `ArrayList<String> lista = new ArrayList<String>();` se puede simplificar con: `var lista = new ArrayList<String>();`
